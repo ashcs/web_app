@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "phonebook record",
+    "description": "phonebook record",
+    "type": "object",
+    "required": ["firstname", "lastname", "workphone","mobilephone", "email", "birthdate"],
+    "properties": {
+        "firstname": {
+            "description": "Имя",
+            "type": "string",
+            "maxLength" : 10
+        },
+        "lastname": {
+            "description": "Фамилия",
+            "type": "string",
+            "maxLength" : 20
+        },
+        "workphone": {
+            "type": "string",
+            "pattern": "^\\d{3}-\\d{3}-\\d{2}-\\d{2}$"
+
+        },
+        "mobilephone": {
+            "type": "string",
+            "pattern": "^\\d{3}-\\d{3}-\\d{2}-\\d{2}$"
+
+        },
+        "email": {
+            "type": "string",
+            "pattern": "^[a-zA-Z]{1,30}@[a-zA-Z.]{1,10}$"
+        },
+        "birthdate": {
+            "type": "string",
+            "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
+        } 
+    }
+}

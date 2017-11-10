@@ -1,0 +1,10 @@
+prepareDir: /tmp/webapp2/prepare
+inputDir: /tmp/webapp2/work
+outputDir: /tmp/webapp2/data
+connection: jdbc:mysql://localhost:3306/flywaytest;
+logDir: /tmp/webapp2/log
+hibernateDialect: org.hibernate.dialect.MySQL5Dialect
+hibernateDriverClass: com.mysql.cj.jdbc.Driver
+hibernateConnectionUrl: jdbc:mysql://localhost:3306/webapp2?characterEncoding=utf-8
+hibernateUsername: webapp2
+hibernatePassword: webapp2
